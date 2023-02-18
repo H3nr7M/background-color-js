@@ -4,8 +4,8 @@ const hex = [0,1,2,3,4,5,6,7,8,9, 'A', 'B', 'C', 'D', 'E', 'F'];
 const hex_value = document.getElementById('hex');
 const cpy = document.getElementById('myCopy');
 
-body.style.backgroundColor = '#000000';
-hex_value.innerHTML = '#000000';
+body.style.backgroundColor = '#000000'; //set default background color
+hex_value.innerHTML = '#000000'; //set default hex value
 
 btn.addEventListener('click', function(){
     let hex_key = '#';
@@ -15,7 +15,7 @@ btn.addEventListener('click', function(){
     }
     hex_value.innerHTML = hex_key;
     document.getElementById('myHex').value = hex_key;
-    body.style.background= hex_key;
+    body.style.background= hex_key;// change background color
     body.style.transition = '1s';
 });
 
